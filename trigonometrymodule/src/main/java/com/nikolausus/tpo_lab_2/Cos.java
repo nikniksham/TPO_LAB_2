@@ -20,7 +20,7 @@ public class Cos {
         return factorial(x-1) * x;
     }
 
-    public static double calcCos(double x) {
+    public static double calc(double x) {
         double result = 0d;
 //        System.out.println("---------------------------");
         x = roundRad(x);
