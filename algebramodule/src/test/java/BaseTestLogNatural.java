@@ -61,6 +61,5 @@ public class BaseTestLogNatural {
 
         fileWriter.flush();
         fileWriter.close();
-
     }
 }
