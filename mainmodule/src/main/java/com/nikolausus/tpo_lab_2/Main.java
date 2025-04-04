@@ -13,14 +13,20 @@ public class Main {
 //            System.out.println((double)i/10 + " ---> " + (math - my));
 //        }
 
-        for (int i = 1; i < 10; ++i) {
-            for (int base = 2; base < 10; ++base) {
-                double math = Math.log(i) / Math.log(base);
-                double my = LogCustom.calcLogWithBase(i, base);
-                System.out.println(base + " >>> " + i + " ---> " + (math - my));
-            }
+//        for (int i = 1; i < 10; ++i) {
+//            for (int base = 2; base < 10; ++base) {
+//                double math = Math.log(i) / Math.log(base);
+//                double my = LogCustom.calcLogWithBase(i, base);
+//                System.out.println(base + " >>> " + i + " ---> " + (math - my));
+//            }
+//        }
+    }
+
+    public static double calcFunc(double x) {
+        if (x <= 0) {
+            return Sec.calcSec(x);
+        } else {
+            return (((Math.pow(LogCustom.calcLogWithBase(x, 10), 3) / LogNatural.calcLog(x)) + LogCustom.calcLogWithBase(x, 2)) * (LogNatural.calcLog(x) + LogCustom.calcLogWithBase(x, 3))) + LogNatural.calcLog(x);
         }
-//        System.out.println(Math.ceil(-5.12) + " " + Math.ceil(5.12));
-//        System.out.println(Math.floor(-5.12) + " " + Math.floor(5.12));
     }
 }
