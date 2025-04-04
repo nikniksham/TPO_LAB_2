@@ -12,9 +12,9 @@ public class TestMainFunction {
         FileWriter fileWriter = new FileWriter("test_results_function.csv");
         fileWriter.append("X value;Result\n");
 
-        double step = 0.1;
-        double start_val = -20;
-        double finish_val = 20;
+        double step = 1;
+        double start_val = -10;
+        double finish_val = 10;
 
         double current_val = start_val;
         while (current_val < finish_val) {
